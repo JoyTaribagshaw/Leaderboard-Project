@@ -1,22 +1,95 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary: #ddd;
   --secondary: #e5d4d4;
 }
 
-html,
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--primary);
-}
-
-body {
-  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
+.scores-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.leaderboard {
+  padding: 10px 140px;
+  font-size: 60px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.score-list {
+  border: 2px solid black;
+  list-style-type: none;
+  font-size: 20px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-scores,
+.recent-scores {
+  padding: 30px 0;
+  font-size: 35px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+li {
+  padding: 10px 5px;
+}
+
+li:nth-child(even) {
+  background-color: #ddd;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scoreboard {
+  width: 35%;
+}
+
+.input {
+  border: 3px solid black;
+  padding: 10px;
+  font-size: 17px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-btn,
+.reset-btn {
+  border: 3px solid black;
+  padding: 10px;
+  margin-left: auto;
+  font-size: 18px;
+  background-color: #fff;
+  font-family: 'Patrick Hand', cursive;
+  box-shadow: 2px 2px 1px;
+}
+
+.reset-btn {
+  width: 35%;
+  height: 45px;
 }
