@@ -52,6 +52,10 @@ li {
   padding: 10px 5px;
 }
 
+li:nth-child(even) {
+  background-color: #ddd;
+}
+
 .main-container {
   display: flex;
   justify-content: space-evenly;
@@ -82,6 +86,7 @@ li {
   font-size: 18px;
   background-color: #fff;
   font-family: 'Patrick Hand', cursive;
+  box-shadow: 2px 2px 1px;
 }
 
 .reset-btn {
