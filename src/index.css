@@ -25,8 +25,8 @@ body {
 
 .leaderboard {
   padding: 10px 140px;
-    font-size: 60px;
-    font-family: 'Patrick Hand', cursive;
+  font-size: 60px;
+  font-family: 'Patrick Hand', cursive;
 }
 
 .score-list {
@@ -35,12 +35,14 @@ body {
   font-size: 20px;
   font-family: 'Patrick Hand', cursive;
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
 
-.add-scores, .recent-scores {
+.add-scores,
+.recent-scores {
   padding: 30px 0;
   font-size: 35px;
   font-family: 'Patrick Hand', cursive;
@@ -65,13 +67,15 @@ li {
   font-size: 17px;
   font-family: 'Patrick Hand', cursive;
 }
+
 .inputs {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.add-btn, .reset-btn {
+.add-btn,
+.reset-btn {
   border: 3px solid black;
   padding: 10px;
   margin-left: auto;
@@ -80,7 +84,7 @@ li {
   font-family: 'Patrick Hand', cursive;
 }
 
-.reset-btn{
+.reset-btn {
   width: 35%;
   height: 45px;
 }
