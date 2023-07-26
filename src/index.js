@@ -21,4 +21,3 @@ addBtn.addEventListener('click', async (e) => {
   await addScore(name, score);
   form.reset();
 });
-
