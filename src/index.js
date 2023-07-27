@@ -1,19 +1,21 @@
 import './index.css';
 import { createScore, fetchScore, addScore } from './modules/api.js';
 
-const refreshBtn = document.querySelector('.reset-btn');
-const addBtn = document.querySelector('.add-btn');
+const refreshButton = document.querySelector('.reset-btn');
+const addButton = document.querySelector('.add-btn');
 
-refreshBtn.addEventListener('click', async () => {
+refreshButton.addEventListener('click', async () => {
   const scoreList = document.querySelector('.score-list');
   const scores = await fetchScore();
   scoreList.innerHTML = '';
-  scores.forEach((n) => {
-    scoreList.appendChild(createScore(n.user, n.score));
+  const scoreElements = scores.map((n) => createScore(n.user, n.score));
+
+  scoreElements.forEach((scoreElement) => {
+    scoreList.appendChild(scoreElement);
   });
 });
 
-addBtn.addEventListener('click', async (e) => {
+addButton.addEventListener('click', async (e) => {
   e.preventDefault();
   const form = document.querySelector('form');
   const name = document.getElementById('name').value;
