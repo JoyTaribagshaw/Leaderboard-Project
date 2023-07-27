@@ -36,6 +36,10 @@ body {
   font-family: 'Patrick Hand', cursive;
 }
 
+.no-border {
+  border: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
