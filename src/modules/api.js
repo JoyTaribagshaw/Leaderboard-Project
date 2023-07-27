@@ -8,8 +8,8 @@ export const createScore = (scoreName, score) => {
     const newScoreItem = document.createElement('li');
     newScoreItem.textContent = `${scoreName} : ${score}`;
     scoreList.appendChild(newScoreItem);
-    nameInput.value = ''
-    scoreInput.value = ''
+    nameInput.value = '';
+    scoreInput.value = '';
   }
 };
 
