@@ -32,13 +32,29 @@ To Do List.
  1. HTML5
  2. CSS3
  3. JavaScript
+ 4. Github
 
 
 ### Key Features <a name="key-features"></a>
 
-  1. Leaderboard Basic Projet setup
+  > This project contain the features listed below.
+
+- **[HTML Display Property]**
+- **[HTML Forms]**
+- **[CSS Flex/Grid]**
+- **[CSS Mobile First Design Approch]**
   
-  
+  <!-- LIVE DEMO -->
+
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+
+<!-- > This Project is deployed at [Github Pages](https://.github.io/leaderboard/dist/) -->
+
+<!-- - [Live Demo Link](https://google.com) -->
+
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+<!-- Project Presentation -->
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
