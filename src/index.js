@@ -1,25 +1,28 @@
-import './index.css';
-import { createScore, fetchScore, addScore } from './modules/api.js';
+import "./index.css";
+import { createScore, fetchScore, addScore } from "./modules/api.js";
 
-const refreshButton = document.querySelector('.reset-btn');
-const addButton = document.querySelector('.add-btn');
+const refreshButton = document.querySelector(".reset-btn");
+const scoreList = document.querySelector(".score-list");
+const formSubmit = document.getElementById("form");
+const nameInput = document.querySelector("#name");
+const scoreInput = document.querySelector("#score");
 
-refreshButton.addEventListener('click', async () => {
-  const scoreList = document.querySelector('.score-list');
+refreshButton.addEventListener("click", async () => {
   const scores = await fetchScore();
-  scoreList.innerHTML = '';
-  const scoreElements = scores.map((n) => createScore(n.user, n.score));
-
-  scoreElements.forEach((scoreElement) => {
-    scoreList.appendChild(scoreElement);
-  });
+  scoreList.innerHTML = "";
+  scores.forEach((n) => createScore(n.user, n.score));
+  if (scores.length === 0) {
+    scoreList.classList.add('no-border')
+  } else {
+    scoreList.classList.remove('no-border') 
+  }
 });
 
-addButton.addEventListener('click', async (e) => {
+formSubmit.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const form = document.querySelector('form');
-  const name = document.getElementById('name').value;
-  const score = document.getElementById('score').value;
-  await addScore(name, score);
-  form.reset();
+  const scoreName = nameInput.value.trim();
+  const score = scoreInput.value.trim();
+  const result = await addScore(scoreName, score);
+  createScore(scoreName, score);
+  document.getElementById("msg").textContent = result;
 });
