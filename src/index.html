@@ -20,29 +20,22 @@
             <button type="reset" class="reset-btn">Refresh</button>
           </div>
           
-          <ul class="score-list">
-            <li>Name: 100</li>
-            <li>Name: 20</li>
-            <li>Name: 50</li>
-            <li>Name: 78</li>
-            <li>Name: 125</li>
-            <li>Name: 77</li>
-            <li>Name: 42</li>
+          <ul class="score-list no-border">
+         
           </ul>
         </div>
 
         <div class="add-scores">
-          <form>
-            <h2 class="add-scores">Add your Score</h2>
+          <form id="form">
+            <h2 class="add-score">Add your Score</h2>
             <div class="inputs">
-              <input class="input" type="text" name="name" placeholder="your name" />
-              <input class="input" type="text" name="score" placeholder="your score" />
+              <input class="input" type="text" name="name" id="name" placeholder="your name" />
+              <input class="input" type="text" name="score" id="score" placeholder="your score" />
+              <label id="msg"></label>
               <button type="submit" class="add-btn">Submit</button>
             </div>
           </form>
         </div>
       </div>
-
-  <script src="index.js" type="module"></script>
 </body>
 </html>
