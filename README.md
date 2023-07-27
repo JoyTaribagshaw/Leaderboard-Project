@@ -7,7 +7,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    <!-- - [🚀 Live Demo](#live-demo) -->
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -44,17 +44,17 @@ To Do List.
 - **[CSS Flex/Grid]**
 - **[CSS Mobile First Design Approch]**
   
-  <!-- LIVE DEMO -->
+  LIVE DEMO
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- > This Project is deployed at [Github Pages](https://.github.io/leaderboard/dist/) -->
+> This Project is deployed at [Github Pages](https://joytaribagshaw.github.io/Leaderboard-Project/)
 
 <!-- - [Live Demo Link](https://google.com) -->
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Project Presentation -->
+Project Presentation
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
