@@ -22,6 +22,9 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
+
+![Leader Board](image.png)
+
 To Do List.
 
 **[ Leaderboard]** The leaderboard website displays scores submitted by different players.
