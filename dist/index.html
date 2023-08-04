@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Leaderboard Project</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<script defer src="main.bundle.js"></script></head>
+<body>
+  <main class="main">
+    <div class="typewriter col-md-12 bg">
+      <h1 class="leaderboard">
+        Leaderboard
+      </h1>
+    </div>
+      <div class="main-container">
+        <div class="scoreboard">
+          <div class="scores-div">
+            <h2 class="recent-scores">Recent Scores</h2>
+            <button type="reset" class="reset-btn">Refresh</button>
+          </div>
+          
+          <ul class="score-list no-border">
+         
+          </ul>
+        </div>
+
+        <div class="add-scores">
+          <form id="form">
+            <h2 class="add-score">Add your Score</h2>
+            <div class="inputs">
+              <input class="input" type="text" name="name" id="name" placeholder="your name" />
+              <input class="input" type="text" name="score" id="score" placeholder="your score" />
+              <label id="msg"></label>
+              <button type="submit" class="add-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+</body>
+</html>
