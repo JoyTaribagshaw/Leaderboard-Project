@@ -137,7 +137,6 @@ I would like to thank Microverse for giving me all the necessary knowledge i nee
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/JoyTaribagshaw/Leaderboard-Project/blob/main/LICENSE) licensed.
